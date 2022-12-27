@@ -1,0 +1,93 @@
+<div id="app">
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(6, 6, 97);">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/login">
+            <button class="btn btn-outline-danger"><b>Login</b></button>
+        </a>
+        <a class="navbar-brand" href="/register">
+            <button class="btn btn-outline-danger" style="margin-left: -200px;"><b>Sign-Up</b></button>
+        </a>
+
+        <a class="navbar-brand">
+            <img src="../assets/mediaplayer-logo (2) (1).png" width="200" height="80" style="margin-left: -20px;">
+        </a>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit"><b>Search</b></button>
+        </form>
+    </div>
+  </nav>
+  <div>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(19, 19, 144);">
+        <div class="container">
+            <a href="/home" class="link-light" style="text-decoration: none;"><b>Home</b></a>
+            <a href="/songs" class="link-light" style="text-decoration: none;"><b>Songs</b></a>
+            <a href="/movies" class="link-light" style="text-decoration: none;"><b>Movies</b></a>
+            <a href="/news" class="link-light" style="text-decoration: none;"><b>News</b></a>
+            <a href="/shows" class="link-light" style="text-decoration: none;"><b>Shows</b></a>
+            <a href="/cartoons" class="link-light" style="text-decoration: none;"><b>Cartoons</b></a>
+        </div>
+    </nav>
+  </div><br>
+
+
+
+
+
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small special-color-dark pt-4" style="background-color:gray;">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!-- Form -->
+          <form class="form-inline">
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+            <a href="/login" class="btn btn-outline-success active" role="button" aria-pressed="true">search</a>
+          </form>
+          <!-- Form -->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <form class="input-group">
+            <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email"
+              aria-describedby="basic-addon2">
+            <a href="/login" class="btn btn-outline-success active m-2" role="button" aria-pressed="true">Login</a>
+          </form>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="/login">MediaPlayer</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+</div>
